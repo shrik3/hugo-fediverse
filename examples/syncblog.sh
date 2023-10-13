@@ -5,7 +5,7 @@
 
 # FOOLPROOF
 echo "do you know what you are doing?"
-exit()
+exit
 
 cd <PATH_TO_TIMELINE_BOT>
 echo "Fetching Timeline from fedi..."

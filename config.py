@@ -1,3 +1,8 @@
+# FOOLPROOF: MODIFY THIS CONFIG AND
+# DELETE THE FOLLOWING TWO LINES
+print("You are not running a script from internet without inspecting, are you?")
+exit()
+
 APPNAME             = 'bot_id'
 BASEURL             = 'https://_instance_'
 
