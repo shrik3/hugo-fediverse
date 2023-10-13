@@ -29,9 +29,8 @@ CLIENTID = 'client.secret'
 TOKEN = 'token.secret'
 
 def get_secrets_from_input():
-	print("account secret not found, please manually input: ")
-	UNAME = input("username or email: ")
-	PW = input("password (not concealed): ")
+	UNAME = input("[input] username or email: ")
+	PW = input("[input] password (not concealed): ")
 	return (UNAME, PW)
 
 
