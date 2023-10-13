@@ -1,0 +1,22 @@
+<style type="text/css">
+table.tidy, table.tidy * {
+    border: none;
+    padding-top:0;
+    padding-bottom:0.2em;
+    text-align: left;
+    vertical-align: top;
+}
+</style>
+
+<h1>Timeline</h1>
+<table class="tidy" align=left>
+    <tbody>
+        {{ $tl := site.Data.tl }}
+        {{ range $tl }}
+        <tr>
+            <td> @{{.account}}<a href={{.url}}>🔗</a><br> </td>
+            <td> [{{.created_at}}] {{ .content }}<br></td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>
