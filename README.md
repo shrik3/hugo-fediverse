@@ -26,7 +26,11 @@ For the first time only, take a look at `config.py` and modify it. Most importan
 ```bash
 ./timelinebot.py`
 ````
-This will fetch your posts and store them in `tl.json`. Then you can preceed to
+You will be prompted to input credentials for the **bot** account (not your main
+account!). After a successful login, the access token will be stored in
+`token.secret` and you no longer need to log in manually.
+
+The script will fetch your posts and store them in `tl.json`. Then you can preceed to
 render this data into static pages with your site generator.
 
 **For Hugo**  
