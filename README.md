@@ -1,4 +1,4 @@
-# integrate your fediverse timeline into your static blog! (without javascript!)
+# integrate your fediverse timeline into your static blog!
 
 
 ## Motivation
@@ -24,19 +24,20 @@ For the first time only, take a look at `config.py` and modify it. Most importan
 - comment out the foolproof lines at the top of `config.py`.
 
 ```bash
-./timelinebot.py`
+./timelinebot.py
 ````
 You will be prompted to input credentials for the **bot** account (not your main
 account!). After a successful login, the access token will be stored in
 `token.secret` and you no longer need to log in manually.
 
-The script will fetch your posts and store them in `tl.json`. Then you can preceed to
+The script will fetch your posts and store them in `tl.json`. Then you can
+proceed to
 render this data into static pages with your site generator.
 
 **For Hugo**  
 create a partial in your template. Maybe take a look at `examples/hugo_timeline_partial.html`.
 
-Everytime before you render the pages, run the timeline bot script and copy
+Every time before you render the pages, run the timeline bot script and copy
 `tl.json` into your blog's `data/` directory. For automation you may use
 `examples/syncblog.sh`
 
